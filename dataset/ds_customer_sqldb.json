@@ -1,0 +1,20 @@
+{
+	"name": "ds_customer_sqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_customer_sqldb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "customers"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "retail",
+			"table": "customers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

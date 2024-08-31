@@ -1,0 +1,27 @@
+{
+	"name": "ds_customer360_result",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_customer360_result_adls",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "result"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customer360.csv",
+				"fileSystem": "result"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

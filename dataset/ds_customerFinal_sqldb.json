@@ -1,0 +1,57 @@
+{
+	"name": "ds_customerFinal_sqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_customer_sqldb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "result"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_fname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_lname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_password",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_street",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_state",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_zipcode",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "retail",
+			"table": "customers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
